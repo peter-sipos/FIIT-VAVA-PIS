@@ -1,0 +1,71 @@
+
+<h1 i18n="@@add_event_header" class="text-center" style="margin-top: 20px;"> Pridaj akciu </h1>
+
+<div class="container box">
+  
+  <form action="" [formGroup]="eventForm" (ngSubmit)="onSubmit();"> <!--eventForm.reset()-->
+
+    <div class="zodpovedna_osoba">
+      <h5>Zodpovedná osoba</h5>
+      <div class="form-group">
+        <label i18n="@@add_event_zodpovedna_osoba" for="zodpovedna_osoba_meno">Meno:</label>
+        <input type="text" formControlName = "zodpovedna_osoba_meno" class="form-control" [ngClass]="{ 'is-invalid': submitted && eventForm.controls.zodpovedna_osoba_meno.errors }">
+        <div *ngIf="submitted && eventForm.controls.zodpovedna_osoba_meno.errors" class="error">
+          <div i18n *ngIf="eventForm.controls.zodpovedna_osoba_meno.errors.required"> Pole zodpovedná osoba je povinné. </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label i18n="@@add_event_zodpovedna_osoba" for="zodpovedna_osoba">Priezvisko:</label>
+        <input type="text" formControlName = "zodpovedna_osoba_priezvisko" class="form-control" [ngClass]="{ 'is-invalid': submitted && eventForm.controls.zodpovedna_osoba_priezvisko.errors }">
+        <div *ngIf="submitted && eventForm.controls.zodpovedna_osoba_priezvisko.errors" class="error">
+          <div i18n *ngIf="eventForm.controls.zodpovedna_osoba_priezvisko.errors.required"> Pole zodpovedná osoba je povinné. </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label i18n="@@add_event_nazov_akcie" for="nazov"> Názov akcie: </label>
+      <input type="text" formControlName = "nazov" class="form-control" [ngClass]="{ 'is-invalid': submitted && eventForm.controls.nazov.errors }">
+      <div *ngIf="submitted && eventForm.controls.nazov.errors" class="error">
+        <div i18n="@@add_event_nazov_akcie_error" *ngIf="eventForm.controls.nazov.errors.required"> Pole názov akcie je povinné. </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label i18n="@@add_event_miesto_konania" for="miesto_konania">Miesto konania:</label>
+      <input type="text" formControlName = "miesto_konania" class="form-control" [ngClass]="{ 'is-invalid': submitted && eventForm.controls.miesto_konania.errors }">
+      <div *ngIf="submitted && eventForm.controls.miesto_konania.errors" class="error">
+        <div i18n *ngIf="eventForm.controls.miesto_konania.errors.required"> Pole miesto konania je povinné. </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label i18n="@@add_event_datum" for="datum">Dátum:</label>
+      <input type="text" placeholder="dd.MM.yyyy" formControlName = "datum" class="form-control" [ngClass]="{ 'is-invalid': submitted && eventForm.controls.datum.errors }">
+      <div *ngIf="submitted && eventForm.controls.datum.errors" class="error">
+        <div i18n *ngIf="eventForm.controls.datum.errors.required"> Pole dátum je povinné. </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label i18n="@@add_event_oddiel" for="oddiel">Oddiel:</label>
+      <input type="text" formControlName = "oddiel" class="form-control" [ngClass]="{ 'is-invalid': submitted && eventForm.controls.oddiel.errors }">
+      <div *ngIf="submitted && eventForm.controls.oddiel.errors" class="error">
+        <div i18n *ngIf="eventForm.controls.oddiel.errors.required"> Pole oddiel je povinné. </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label i18n="@@add_event_popis" for="popis">Popis:</label>
+      <textarea type="text" formControlName = "popis" class="form-control" [ngClass]="{ 'is-invalid': submitted && eventForm.controls.popis.errors }"></textarea>
+      <div *ngIf="submitted && eventForm.controls.popis.errors" class="error">
+        <div i18n *ngIf="eventForm.controls.popis.errors.required"> A napíš niečo pekné .. </div>
+      </div>
+    </div>
+
+    
+    <input type="submit" value="Pridaj akciu" class="btn btn-primary">
+
+  </form>
+</div>

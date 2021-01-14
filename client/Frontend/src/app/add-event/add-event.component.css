@@ -1,0 +1,17 @@
+
+.box {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.error {
+    color: red;
+}
+
+.zodpovedna_osoba {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+}

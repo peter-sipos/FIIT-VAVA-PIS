@@ -1,0 +1,117 @@
+h2 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+td:last-child {
+    padding-left: 50px;
+}
+
+.box:nth-child(n + 2) {
+    width: 500px;
+    margin-top: 10px;
+    background-color: rgba(250, 255, 255, 0.6);
+}
+
+.box:nth-child(n + 2):hover {
+    max-width: 505px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(243, 156, 18, 0.9), 0 6px 20px 0 rgba(243, 156, 18, 0.19);
+    cursor: pointer;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+}
+
+.header .col-lg-4:nth-child(1), .header .col-lg-4:nth-child(2) {
+    border-right: 2px dotted #f39c12;
+}
+
+.col-lg-4 {
+    width: calc(500 / 3);
+    text-align: center;
+    padding-top: 15px;
+}
+
+.col-lg-4:nth-child(1), .col-lg-4:nth-child(2) {
+    border-right: 2px dotted black;
+}
+
+/*##################################################################################*/
+
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 3%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  
+  .close:hover,
+  .close:focus {
+    cursor: pointer;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+
+.modal table {
+  width: 100%;
+}
+
+.modal tr:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.modal td {
+  padding-top: 15px;
+}
+
+.modal td:nth-child(1) {
+  padding-left: 30px;
+}
+
+.modal td:nth-child(2) {
+  padding-left: 90px;
+}
+
+.modal img {
+  width: 200px;
+}

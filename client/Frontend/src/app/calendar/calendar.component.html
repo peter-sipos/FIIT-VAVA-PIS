@@ -1,0 +1,29 @@
+<div class="container">
+  <br><br>
+  <h1 i18n="@@kalendar_header" class="text-center"> Kalendár akcií </h1>
+  <br>
+
+  <img *ngIf="loading" class="pl-3" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+
+  <div *ngFor="let e of events; let i = index"  class="container box">
+    <div class="row">
+      <div class="col-lg-11">
+        <table>
+          <tr>
+            <td (click)="showDetail(i)"><h5> {{ e.datum }} </h5></td> <!-- | date: 'dd.MM.yyyy' -->
+            <td (click)="showDetail(i)"><p> {{ e.nazov }} </p></td>
+            <td>
+              <img *ngIf="future(i)" (click)="markAttendance(i)" src="./assets/attendance-logo-online.png" alt="attendance-logo" class="img-responsive attendance-logo" />
+              <img *ngIf="!future(i)" (click)="showDetail(i)" src="./assets/attendance-logo.png" alt="attendance-logo" class="img-responsive attendance-logo" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-lg-1">
+        <a><img *ngIf="future(i)" (click)="send_mail(i)" src="./assets/email-logo.png" class="email"/></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+ 

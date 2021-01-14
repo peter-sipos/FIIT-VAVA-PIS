@@ -1,0 +1,94 @@
+<div class="container box" style="margin-top: 30px;">
+  <h1 class="text-center"> {{ event.nazov }} </h1>
+  <div class="container" style="width: 400px; max-width: 100%; margin-top: 30px;">
+  <table>
+    <tr>
+      <td><p><b i18n> Oddiel </b></p></td>
+      <td><p> {{ event.oddiel }} </p></td>
+    </tr>
+    <tr>
+      <td><p><b i18n>Zodpovedná osoba</b></p></td>
+      <td><p> {{ event.zodpovedna_osoba }} </p></td>
+    </tr>
+    <tr>
+      <td><p><b i18n>Miesto</b></p></td>
+      <td><p> {{ event.miesto_konania }} </p></td>
+    </tr>
+    <tr>
+      <td><p><b i18n>Dátum</b></p></td>
+      <td><p> {{ event.datum }} </p></td>
+    </tr>
+    <tr>
+      <td><p><b i18n> Popis </b></p></td>
+      <td><p> {{ event.popis }} </p></td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+
+<h2  i18n="@@event_detail_ucast" class="text-center">Účasť na akcií</h2>
+
+<div class="container" style="width: 500px; color: white;">
+  <div class="row header">
+    <div class="col-lg-4"><p i18n> Meno </p></div>
+    <div class="col-lg-4"><p i18n> Oddiel </p></div>
+    <div class="col-lg-4"><p i18n> Číslo na rodiča </p></div>
+  </div>
+
+  <br><br>
+  <p  i18n="@@event_detail_error_ziadna_dochadzka" *ngIf="scouts === null" style="color: white;"> Žiadna.. Asi by si mal začať robiť promo .. </p>
+</div>
+
+<div *ngFor="let s of scouts; let i = index" class="container box scout">
+  <div class="row" (click)="showScout(i)">
+    <div class="col-lg-4"><p> {{ s.meno }} {{ s.priezvisko }} </p></div>
+    <div class="col-lg-4"><p> {{ s.oddiel }} </p></div>
+    <div class="col-lg-4"><p> <a> {{ s.cislo_na_rodica }} </a> </p></div>
+  </div>
+</div>
+
+<!-- <app-modal-box *ngIf="show"></app-modal-box> -->
+
+<div id="myModal" class="modal" (click)="close()" *ngIf="show">
+
+  <!-- Modal content -->
+  <div class="container box modal-content">
+   
+    <div class="modal-body">
+      <a (click)="close()"><h4><span class="close"> ( <b> &times; </b> ) </span></h4></a>
+      <div class="container" style="margin-top: -10px; width: 200px">
+        <img src="./assets/bipi100.png" alt="BP"/>
+      </div>
+      <h3 i18n="@@event_detail_detail_ucastnika" class="text-center"> Detail účastníka </h3><br>
+      
+      <table>
+        <tr>
+          <td><p><b i18n>Meno:</b></p></td><td><p> {{ modal_scout.meno }} </p></td>
+        </tr>
+        <tr>
+          <td><p><b i18n>Priezvisko:</b></p></td><td><p> {{ modal_scout.priezvisko }} </p></td>
+        </tr>
+        <tr>
+          <td><p><b i18n>Oddiel:</b></p></td><td><p> {{ modal_scout.oddiel }}. </p></td>
+        </tr>
+        <tr>
+          <td><p><b i18n>Rola:</b></p></td><td><p> {{ modal_scout.rola }} </p></td>
+        </tr>
+        <tr>
+          <td><p><b i18n>Číslo na rodiča:</b></p></td><td><p> {{ modal_scout.cislo_na_rodica }} </p></td>
+        </tr>
+        <tr>
+          <td><p><b>Email: </b></td><td><p> {{ modal_scout.email }} </p></td>
+        </tr>
+      </table>  
+      
+    </div>
+   
+  </div>
+
+</div>
+
+
+
+<br><br><br><br>

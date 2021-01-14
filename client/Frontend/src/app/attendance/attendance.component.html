@@ -1,0 +1,78 @@
+
+<div class="container box">
+  <h3 i18n="@@attendance_header" class="text-center"> Zaznač dochádzku na akcií: </h3>
+  <h1 class="text-center"> {{ event.nazov }} </h1>
+
+  <hr><br><br> 
+
+  <div id="top">
+    <div *ngIf="scann === false" class="container scanner-top">
+      <img src="./assets/qr-example.png" alt="qr-example" />
+      <button i18n="@@attendance_qr_kod" (click)="openCamera()" type="button" class="btn btn-lg btn-primary"> Naskenuj QR kód </button>
+    </div>
+    <app-scanner *ngIf="scann" (scanEvent)="receiveId($event)"></app-scanner>
+
+    <p class="text-center"><br><br> <span i18n="@@attendance_or">alebo</span> <br><br></p>
+
+    <form class="container" action="" [formGroup]="searchForm" (ngSubmit)="onSubmitSearch();">
+      <div class="form-group container input-group input-group-lg">
+        <input formControlName = "meno_ucastnika" [ngClass]="{ 'is-invalid': submittedSearch && searchForm.controls.meno_ucastnika.errors }" type="text" class="form-control" aria-label="Large" placeholder="Meno účastníka"><br><br>
+        <input formControlName = "priezvisko_ucastnika" [ngClass]="{ 'is-invalid': submittedSearch && searchForm.controls.priezvisko_ucastnika.errors }" type="text" class="form-control" aria-label="Large" placeholder="Priezvisko účastníka"><br><br><br>
+        <input style="width: 100%;" type="submit" value="Vyhľadaj účastníka" class="btn btn-lg btn-primary">
+      </div>
+    </form>
+  </div>
+
+  <form id="bottom" class="container" style="width: 400px;"  action="" [formGroup]="attendanceForm" (ngSubmit)="onSubmit();">
+    <hr>
+    <input formControlName = "poplatok" [ngClass]="{ 'is-invalid': submitted && attendanceForm.controls.poplatok.errors }" type="number" class="form-control" aria-label="Large" placeholder="Výška poplatku"><br><br>
+    <div class="row">
+      <div class="col-lg-3">
+        <label class="switch">
+            <input formControlName = "isic" type="checkbox" class="checkbox">
+            <span class="sliderSwitch round"></span>
+        </label>
+      </div>
+      <div class="col-lg-9">
+          <p> ISIC </p>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <label class="switch">
+            <input formControlName = "vlaky" type="checkbox" class="checkbox">
+            <span class="sliderSwitch round"></span>
+        </label>
+      </div>
+      <div class="col-lg-9">
+          <p> Karta na vlaky </p>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <label class="switch">
+            <input formControlName = "poistenca" type="checkbox" class="checkbox">
+            <span class="sliderSwitch round"></span>
+        </label>
+      </div>
+      <div class="col-lg-9">
+          <p> Karta poistenca </p>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <label class="switch">
+            <input formControlName = "prihlaska" type="checkbox" class="checkbox">
+            <span class="sliderSwitch round"></span>
+        </label>
+      </div>
+      <div class="col-lg-9">
+          <p> Prihláška </p>
+      </div>  
+    </div>
+    <hr>
+    <input style="width: 100%;" type="submit" value="Uložiť dochádzku" class="btn btn-lg btn-primary">
+
+  </form>
+
+</div>

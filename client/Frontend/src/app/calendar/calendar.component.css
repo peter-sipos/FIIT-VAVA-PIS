@@ -1,0 +1,67 @@
+.box {
+    padding-top: 30px;
+    margin-top: 10px;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 0.3s;
+}
+
+.box:hover {
+    max-width: 505px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 8px 0 rgba(243, 156, 18, 0.9), 0 6px 20px 0 rgba(243, 156, 18, 0.19);
+    cursor: pointer;
+}
+
+h5 {
+    color: #f39c12;
+}
+
+.next-event {
+    background-color: rgba(243, 156, 18, 0.9);
+    max-width: 600px;
+}
+
+.next-event h5 {
+    color: black;
+}
+
+td:nth-child(1) {
+    width: 30px;
+    /* border: 1px solid red; */
+    border-right: 2px dotted black;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+td:nth-child(2) {
+    /* border: 1px solid blueviolet; */
+    width: 280px;
+    padding-left: 30px;
+    padding-top: 18px;
+}
+
+td:nth-child(3) {
+    /* border: 1px solid burlywood; */
+    width: 50px;
+}
+
+.attendance-logo {
+    width: 25px;
+    margin-left:40%;
+}
+
+.container:last-of-type {
+    margin-bottom: 100px;
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.email {
+    margin-left: 45px;
+    width: 50px;
+}

@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+.box {
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.background-img {
+    z-index: -10;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+.btn-primary {
+    background-color: #f39c12 !important;
+    min-width: 50px;
+    border: none;
+}

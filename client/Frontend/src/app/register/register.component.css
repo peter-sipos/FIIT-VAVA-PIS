@@ -1,0 +1,23 @@
+.register {
+    margin-top: 10%;
+    padding: 25px;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+p, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+.background-img {
+    z-index: -10;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}

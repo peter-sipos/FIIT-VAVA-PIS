@@ -1,0 +1,15 @@
+p, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+h1 {
+    color: #f39c12;
+}
+
+.background-img {
+    max-width: 100%;
+}

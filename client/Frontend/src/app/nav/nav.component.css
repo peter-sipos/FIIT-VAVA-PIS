@@ -1,0 +1,17 @@
+nav {
+    background-color: #f39c12 !important;
+}
+
+nav li {
+    padding-left: 20px; 
+    font-weight: bold;
+}
+
+nav li:last-child {
+    padding-left: 20px; 
+    font-weight: normal;
+}
+
+a {
+    cursor: pointer;
+}

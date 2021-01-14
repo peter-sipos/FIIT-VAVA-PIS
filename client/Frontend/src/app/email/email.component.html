@@ -1,0 +1,99 @@
+<br>
+<h1 class="text-center"> Email </h1>
+
+<div class="container box">
+  
+  <form action="" [formGroup]="emailForm" (ngSubmit)="onSubmit();">
+
+    <div class="form-group">
+      <label for="name"><b i18n> Príjemcovia: </b></label>
+      <!-- SWITCH 
+        add - checked to activate
+      -->
+      <div class="container">
+        <div style="padding: 0px;  width: 290px;">
+          <ul>
+            <li>
+                <label class="switch">
+                  <input formControlName = "skauti" type="checkbox" class="checkbox">
+                  <span class="sliderSwitch round"></span>
+                </label>
+            </li>	  
+            <li>
+              <p i18n="@@email_skauti"> Skauti </p>
+            </li>
+          </ul>
+          <ul>
+              <li>
+                  <label class="switch">
+                  <input formControlName = "skautky" type="checkbox" class="checkbox">
+                  <span class="sliderSwitch round"></span>
+                  </label>
+              </li>  
+            <li>	
+              <p i18n="@@email_skautky"> Skautky </p>
+            </li>	
+          </ul>
+        </div>
+        <div style="padding: 0px;  width: 290px;">
+            <ul>
+                <li>
+                    <label class="switch">
+                      <input formControlName = "vlcata" type="checkbox" class="checkbox">
+                      <span class="sliderSwitch round"></span>
+                    </label>
+                </li>	
+                <li>
+                  <p i18n="@@email_vlcata"> Vĺčatá </p>
+                </li>
+              </ul>
+              <ul>
+                  <li>
+                    <label class="switch">
+                    <input formControlName = "vcielky" type="checkbox" class="checkbox">
+                    <span class="sliderSwitch round"></span>
+                    </label>
+                  </li>  
+                <li>	
+                  <p i18n="@@email_vcielky"> Včielky </p>
+                </li>	
+              </ul>
+        </div>
+      </div>
+      <!-- /SWITCH -->
+      <br><br><br>
+    </div>
+    
+    <div class="form-group">
+      <label for="subject"><b i18n> Predmet </b></label> 
+      <input type="text" formControlName = "subject" class="form-control" [ngClass]="{ 'is-invalid': submitted && emailForm.controls.subject.errors }">
+      <div *ngIf="submitted && emailForm.controls.subject.errors" class="error">
+        <div i18n="@@email_error_predmet" *ngIf="emailForm.controls.subject.errors.required"> Predmet emailu musí byť vyplnený. </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="message"><b i18n> Správa </b></label>
+      <textarea rows="4" cols="50" formControlName = "message" class="form-control" [ngClass]="{ 'is-invalid': submitted && emailForm.controls.message.errors }">
+      </textarea>
+      <div *ngIf="submitted && emailForm.controls.message.errors" class="error">
+        <div i18n="@@email_error_sprava" *ngIf="emailForm.controls.message.errors.required"> Email musí obsahovať text... </div>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="qr_wanted">
+      <div class="col-lg-3">
+        <label class="switch">
+            <input formControlName = "qr_code" type="checkbox" class="checkbox">
+            <span class="sliderSwitch round"></span>
+        </label>
+      </div>
+      <div class="col-lg-9">
+          <p i18n="@@email_qr_code"> Do emailu pridať QR kód na dochádzku </p>
+      </div>  
+    </div>
+
+    <input type="submit" value="Poslať" class="btn btn-primary">
+
+  </form>
+</div>

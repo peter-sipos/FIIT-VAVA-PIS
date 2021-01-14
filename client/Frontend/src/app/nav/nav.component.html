@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+        <img src="./assets/logo.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a i18n="@@nav_kalendar" class="nav-link" routerLink="/calendar">Kalendár akcií</a>
+        </li>
+        <li class="nav-item active">
+          <a i18n="@@nav_pridaj_akciu" class="nav-link" routerLink="/add-event"> Pridaj akciu </a>
+        </li>
+        <li class="nav-item active">
+          <a i18n="@@nav_email" class="nav-link" routerLink="/email">Email</a>
+        </li>
+        <li class="nav-item">
+          <a i18n="@@nav_logout" class="nav-link" (click)="logout()"> Odhlásiť sa </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

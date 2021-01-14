@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="nav_kalendar" datatype="html">
+        <source>Kalendár akcií</source>
+        <target>Kalendár akcií</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav_pridaj_akciu" datatype="html">
+        <source> Pridaj akciu </source>
+        <target> Pridaj akciu </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav_email" datatype="html">
+        <source>Email</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav_logout" datatype="html">
+        <source> Odhlásiť sa </source>
+        <target> Odhlásiť sa </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_event_header" datatype="html">
+        <source> Pridaj akciu </source>
+        <target> Pridaj akciu </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_event_nazov_akcie" datatype="html">
+        <source> Názov akcie: </source>
+        <target> Názov akcie: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_event_nazov_akcie_error" datatype="html">
+        <source> Pole názov akcie je povinné. </source>
+        <target> Pole názov akcie je povinné. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_event_zodpovedna_osoba" datatype="html">
+        <source>Zodpovedná osoba:</source>
+        <target>Zodpovedná osoba:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d3a04f682584c12a6885a7833248caa8bf2dff74" datatype="html">
+        <source> Pole zodpovedná osoba je povinné. </source>
+        <target> Pole zodpovedná osoba je povinné. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_event_miesto_konania" datatype="html">
+        <source>Miesto konania:</source>
+        <target>Miesto konania:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="83f6f6f1a310c55f186ed9792b747c7b3e0d43da" datatype="html">
+        <source> Pole miesto konania je povinné. </source>
+        <target> Pole miesto konania je povinné. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_event_datum" datatype="html">
+        <source>Dátum:</source>
+        <target>Dátum:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="203391e43026f6d86b593bd002b24bd525f4dcb3" datatype="html">
+        <source> Pole dátum je povinné. </source>
+        <target> Pole dátum je povinné. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_event_oddiel" datatype="html">
+        <source>Oddiel:</source>
+        <target>Oddiel:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f67a7f1940ddf044086677ecda1cf817ffd17e9f" datatype="html">
+        <source> Pole oddiel je povinné. </source>
+        <target> Pole oddiel je povinné. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_event_popis" datatype="html">
+        <source>Popis:</source>
+        <target>Popis:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f077f589b4d86530e3ac22c878f65c4757e71f28" datatype="html">
+        <source> A napíš niečo pekné .. </source>
+        <target> A napíš niečo pekné .. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-event/add-event.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login_heslo" datatype="html">
+        <source>Heslo</source>
+        <target>Heslo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login_error" datatype="html">
+        <source>Heslo je povinné.</source>
+        <target>Heslo je povinné.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login_button" datatype="html">
+        <source>Prihlásiť sa</source>
+        <target>Prihlásiť sa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="kalendar_header" datatype="html">
+        <source> Kalendár akcií </source>
+        <target> Kalendár akcií </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/calendar/calendar.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="83028413c26ce0d1abcff731f310dc251f9282ce" datatype="html">
+        <source> Oddiel </source>
+        <target> Oddiel </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="09e1ccc062cbe67db70dd1376fe051eaf22968d3" datatype="html">
+        <source>Zodpovedná osoba</source>
+        <target>Zodpovedná osoba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8869b71b713d84355bd12c2e4afc5fd191c54a15" datatype="html">
+        <source>Miesto</source>
+        <target>Miesto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="54d80feea88d5f73f013376aaa30035271d6b133" datatype="html">
+        <source>Dátum</source>
+        <target>Dátum</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5d35c9bfa902c1f3167a19aa736e286ebfac22a9" datatype="html">
+        <source> Popis </source>
+        <target> Popis </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="event_detail_ucast" datatype="html">
+        <source>Účasť na akcií</source>
+        <target>Účasť na akcií</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9601c995c3144ad783dfbab670dde96ab3f6c27e" datatype="html">
+        <source> Meno </source>
+        <target> Meno </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fb0564d6fc56556f7fdc26cb9c0c001f6271b4a5" datatype="html">
+        <source> Číslo na rodiča </source>
+        <target> Číslo na rodiča </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="event_detail_error_ziadna_dochadzka" datatype="html">
+        <source> Žiadna.. Asi by si mal začať robiť promo .. </source>
+        <target> Žiadna.. Asi by si mal začať robiť promo .. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="event_detail_detail_ucastnika" datatype="html">
+        <source> Detail účastníka </source>
+        <target> Detail účastníka </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6c01225db8a0e85f8befdd56dd09243e699329f4" datatype="html">
+        <source>Meno:</source>
+        <target>Meno:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b27d38662cd3542667f2cf8009d78626f416aaff" datatype="html">
+        <source>Priezvisko:</source>
+        <target>Priezvisko:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f9ecbedd0063793086a937c8f5bc46eceed852fc" datatype="html">
+        <source>Oddiel:</source>
+        <target>Oddiel:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b635502cdba8b9eca3c82c273350fd42721aed71" datatype="html">
+        <source>Rola:</source>
+        <target>Rola:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cd668382ddfafcd6ac02ddcd56279c7ee082c1e3" datatype="html">
+        <source>Číslo na rodiča:</source>
+        <target>Číslo na rodiča:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7a6244a0b10048b2321cbc333473fbe80775356d" datatype="html">
+        <source> Príjemcovia: </source>
+        <target> Príjemcovia: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/email/email.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email_skauti" datatype="html">
+        <source> Skauti </source>
+        <target> Skauti </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/email/email.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email_skautky" datatype="html">
+        <source> Skautky </source>
+        <target> Skautky </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/email/email.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email_vlcata" datatype="html">
+        <source> Vĺčatá </source>
+        <target> Vĺčatá </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/email/email.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email_vcielky" datatype="html">
+        <source> Včielky </source>
+        <target> Včielky </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/email/email.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="32488261fe149ff2ae7b47e12f991d598e65433c" datatype="html">
+        <source> Predmet </source>
+        <target> Predmet </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/email/email.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email_error_predmet" datatype="html">
+        <source> Predmet emailu musí byť vyplnený. </source>
+        <target> Predmet emailu musí byť vyplnený. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/email/email.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0fea9c3b0f9c3de8e73467f6b779698919e28c51" datatype="html">
+        <source> Správa </source>
+        <target> Správa </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/email/email.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email_error_sprava" datatype="html">
+        <source> Email musí obsahovať text... </source>
+        <target> Email musí obsahovať text... </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/email/email.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email_qr_code" datatype="html">
+        <source> Do emailu pridať QR kód na dochádzku </source>
+        <target> Do emailu pridať QR kód na dochádzku </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/email/email.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="attendance_header" datatype="html">
+        <source> Zaznač dochádzku na akcií: </source>
+        <target> Zaznač dochádzku na akcií: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attendance/attendance.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="attendance_qr_kod" datatype="html">
+        <source> Naskenuj QR kód </source>
+        <target> Naskenuj QR kód </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attendance/attendance.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="attendance_or" datatype="html">
+        <source>alebo</source>
+        <target>alebo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attendance/attendance.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="attendance_vyhladaj_ucastnika" datatype="html">
+        <source> Vyhľadaj účastníka </source>
+        <target> Vyhľadaj účastníka </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attendance/attendance.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

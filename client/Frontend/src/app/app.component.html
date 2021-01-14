@@ -1,0 +1,13 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>PIS</title>
+</head>
+
+<app-nav></app-nav>
+
+<section>
+  <router-outlet></router-outlet>
+</section>
+
+<img class="background-img" src="./assets/tabor.jpg" alt="tabor" *ngIf="screenWidth >= 1200" />
+<img class="background-img" src="./assets/tabor_mobile.jpg" alt="tabor" *ngIf="screenWidth < 1200" />
